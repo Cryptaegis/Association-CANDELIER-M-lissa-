@@ -5,91 +5,182 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="vous trouverez ici le site WWWF!" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
     <link href="style.css" rel="stylesheet" />
     <script src="include.js"></script>
     <title>WWF</title>
   </head>
 
   <body>
+    <!--ajouter un dossier avec le header ce qui permet de mréduire le nombre de  code et une meilleur lisibilité-->
     <div w3-include-html="header.html"></div>
+    <script>
+      includeHTML();
+    </script>
+
     <main>
       <div>EARTH HOUR 2023</div>
+
       <!-- ajouter un ::after pour une ligne en début de phrase texte-decoration-->
       <div>La plus grande mobilisation citoyenne pour la planète</div>
 
-      <button>En savoir plus</button>
+      <button class="more">En savoir plus</button>
+      <i class="bi bi-chevron-down"></i>
 
       <!-- ajouter une fleche qui renvoie au contenu principal-->
+      <p class="title first">A la une</p>
+      <span class="little-line"></span>
 
-      <div>
-        <h5>
-          Rapport du GIEC : l'heure des choix et le sens des responsabilités
-        </h5>
-        <p>
-          Le Groupe intergouvernemental d’experts sur l’évolution du climat
-          (GIEC) publie ce 20 mars la synthèse de ses derniers travaux, sortis
-          entre 2021 et 2022.
-        </p>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="images\304219.jpeg" class="card-img-top" alt="violet avec montagne" />
+            <div class="card-body">
+              <h5 class="card-title">
+                Rapport du GIEC : l'heure des choix et le sens des
+                responsabilités
+              </h5>
+              <p class="card-text">
+                Le Groupe intergouvernemental d’experts sur l’évolution du
+                climat (GIEC) publie ce 20 mars la synthèse de ses derniers
+                travaux, sortis entre 2021 et 2022.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images\skyview.jpeg" class="card-img-top" alt="vu du ciel de la montagne" />
+            <div class="card-body">
+              <h5 class="card-title">Le butor étoilé renaît de ses cendres</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images\Group 9-min.png" class="card-img-top" alt="fille qui mange un burger" />
+            <div class="card-body">
+              <h5 class="card-title">STOP AUX MEATHOS!</h5>
+              <p class="card-text">
+                74% de la population française souffre de meathomanie. Et vous ?
+                Pour protéger la planète, la solution est dans votre assiette :
+                suivez le tuto !
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images\Medium.jpeg" class="card-img-top" alt="savane" />
+            <div class="card-body">
+              <h5 class="card-title">
+                Biodiversité en voie de disparition… agissons !
+              </h5>
+              <p class="card-text">
+                Le dernier rapport « Planète vivante » publié par le WWF vient
+                rappeler l’ampleur dramatique de la perte de biodiversité dans
+                le monde, notamment à cause du changement climatique.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-        <h5>Le butor étoilé renaît de ses cendres</h5>
-        <p>
-          Au Royaume-Uni, alors qu'il a frôlé l'extinction à deux reprises, ce
-          héron emblématique refait peu à peu surface. Chez nos voisins
-          anglo-saxons, sa population est passée de 11 individus en 1997 à 228
-          en 2021.
-        </p>
-      </div>
-      <div>
-        <h5>STOP AUX MEATHOS!</h5>
-        <p>
-          74% de la population française souffre de meathomanie. Et vous ? Pour
-          protéger la planète, la solution est dans votre assiette : suivez le
-          tuto !
-        </p>
-      </div>
-      <div>
-        <h5>Biodiversité en voie de disparition… agissons !</h5>
-        <p>
-          Le dernier rapport « Planète vivante » publié par le WWF vient
-          rappeler l’ampleur dramatique de la perte de biodiversité dans le
-          monde, notamment à cause du changement climatique.
-        </p>
-      </div>
-      <div>NOS ACTIONS POUR LA NATURE</div>
 
-      <div>ÉLÉPHANT : PLUS GRAND MAMMIFÈRE TERRESTRE</div>
-      <div>Préserver les mangroves du Manambolo</div>
+      <div class="title second">NOS ACTIONS POUR LA NATURE</div>
+      <span class="little-line"></span>
+      <div class="card text-bg-dark">
+        <img src="images\naha2.jpeg" class="card-img" alt="elephant dans la savane" />
+        <div class="card-img-overlay">
+          <h5 class="card-title">ÉLÉPHANT : PLUS GRAND MAMMIFÈRE TERRESTRE</h5>
+        </div>
+      </div>
+
+      <div class="card text-bg-dark">
+        <img src="images\556.jpeg" class="card-img" alt="rivière" />
+        <div class="card-img-overlay">
+          <h5 class="card-title">Préserver les mangroves du Manambolo</h5>
+        </div>
+      </div>
+
       <!-- insérer la  vidéos-->
+      <video controls width="950">
+        <source src="https://youtu.be/MPAEcul9dIo" type="video/mp4" />
+        Download the
 
-      <div>ACTUALITÉS</div>
-      <p>
-        18.04.2023 Des associations de défense de l'environnement intentent une
-        action en justice contre l'Union européenne Plusieurs ONG déposent un
-        recours devant la Cour de justice de l'UE contre le refus de la
-        Commission européenne de supprimer le gaz fossile de la taxonomie.
-      </p>
-      <p>
-        17.04.2023 Loi Industrie verte : Le dialogue environnemental mérite
-        mieux qu’une consultation bâclée Le projet de loi Industrie verte doit
-        engager une réindustrialisation en France afin de développer notre
-        souveraineté et répondre aux besoins de la transition écologique.
-      </p>
-      <p>
-        20.03.2023 Earth Hour du WWF, une mobilisation mondiale pour la
-        protection de la nature Samedi 25 mars, le WWF revient avec Earth Hour,
-        la plus grande mobilisation mondiale pour la planète.
-      </p>
-      <p>
-        20.03.2023 Rapport du GIEC : l'heure des choix et le sens des
-        responsabilités Le Groupe intergouvernemental d’experts sur l’évolution
-        du climat (GIEC) publie ce 20 mars la synthèse de ses derniers travaux,
-        sortis entre 2021 et 2022.
-      </p>
+        <a href="https://youtu.be/MPAEcul9dIo">MP4</a>
+        video.
+      </video>
+      <div class="title third">
+        ACTUALITÉS
+        <div></div>
+      </div>
+      <span class="little-line"></span>
+
+      <div class="article-container">
+        <div class="section">
+          <p>18.04.2023</p>
+          <p>
+            <b
+              >Des associations de défense de l'environnement intentent une
+              action en justice contre l'Union européenne.</b
+            >
+            Plusieurs ONG déposent un recours devant la Cour de justice de l'UE
+            contre le refus de la Commission européenne de supprimer le gaz
+            fossile de la taxonomie.
+          </p>
+        </div>
+        <div class="section">
+          <p>17.04.2023</p>
+          <p>
+            <b
+              >Loi Industrie verte : Le dialogue environnemental mérite mieux
+              qu’une consultation bâclée.</b
+            >
+            Le projet de loi Industrie verte doit engager une
+            réindustrialisation en France afin de développer notre souveraineté
+            et répondre aux besoins de la transition écologique.
+          </p>
+        </div>
+        <div class="section">
+          <p>20.03.2023</p>
+          <p>
+            <br>Earth Hour du WWF, une mobilisation mondiale pour la protection
+              de la nature</br>. Samedi 25 mars, le WWF revient avec Earth Hour,la plus grande
+            mobilisation mondiale pour la planète.
+          </p>
+        </div>
+        <div class="section">
+          <p>20.03.2023</p>
+          <p>
+            <br>Rapport du GIEC : l'heure des choix et le sens des
+              responsabilités.</br>
+            Le Groupe intergouvernemental d’experts sur l’évolution du climat
+            (GIEC) publie ce 20 mars la synthèse de ses derniers travaux, sortis
+            entre 2021 et 2022.
+          </p>
+        </div>
+      </div>
+      <p class="link-page">Toute L'actualité</p>
     </main>
     <div w3-include-html="footer.html"></div>
     <script>
       includeHTML();
     </script>
+  
   </body>
 </html>
