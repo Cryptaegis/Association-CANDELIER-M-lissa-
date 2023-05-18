@@ -1,12 +1,14 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
 .menu {
   margin-left: 3em;
 }
 .container-button {
   display: flex;
   justify-content: flex-end;
-  gap: 5px;
+  gap: 12px;
   margin: 1em;
-  height: 2em;
+  height: 3em;
 }
 .btn {
   background: #ffffff;
@@ -14,14 +16,36 @@
   width: 12em;
   padding: 5px;
 }
+
+.shop:active {
+  color: white;
+  background: black;
+}
+
 .gift {
-  background: #ff620f;
-  color: #ffffff;
+  background: #ff8c00;
+  color: #ff8c00;
   border: none;
-  width: 10em;
+  width: 12em;
 }
 .shop {
-  width: 7em;
+  width: 9em;
+}
+.bi-chevron-down {
+  display: block;
+  background: #ffffff;
+  padding: 11px 15px;
+  border-radius: 50%;
+  font-size: 30px;
+  margin: 0.5em 21.5em;
+  height: 2em;
+  width: 2em;
+}
+.more {
+  background: #ff620f;
+  border: none;
+  color: #ffffff;
+  padding: 6px 30px;
 }
 
 .navbar-container {
@@ -50,4 +74,109 @@
   color: black;
   text-decoration: none;
   border-bottom: 2px solid black;
+}
+
+.bi {
+  position: relative;
+  z-index: 1;
+}
+.bi-box2-heart-fill,
+.bi-handbag-fill,
+.bi-person-fill {
+  margin-top: 6px;
+  margin-right: -35px;
+}
+.bi-search {
+  margin: 1.8em 5em;
+}
+video {
+  margin: 5em 14em;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+.little-line {
+  display: flex;
+  border-top: 2px solid #000;
+  width: 30px;
+  margin: 1em 41em;
+}
+.section {
+  display: flex;
+  width: 40em;
+  margin-left: 20em;
+  justify-content: center;
+  gap: 3em;
+}
+.link-page {
+  margin: 5em 30em;
+  border: 3px solid black;
+  font-size: 1.2em;
+  width: 8em;
+  padding: 5px;
+  height: 2.5em;
+}
+
+.box-title {
+  display: flex;
+  flex-flow: wrap;
+  padding: 1em;
+  gap: 6.6em;
+  margin-left: 11em;
+}
+.link-box {
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+  margin-left: 12em;
+}
+
+.credit-container {
+  margin: 3em 12em;
+  width: 43em;
+  font-size: 15px;
+}
+
+.credit-section {
+}
+.follow {
+  margin-left: 20em;
+  width: 10em;
+}
+.bi-facebook,
+.bi-twitter,
+.bi-instagram,
+.bi-youtube,
+.bi-linkedin {
+  font-size: 15px;
+  width: 30px;
+}
+.edit {
+  font-size: 10px;
+}
+
+.footer-line {
+  display: flex;
+  border-top: 1px solid grey;
+  width: 66em;
+}
+.title-credit {
+  font-size: 20px;
+}
+
+.credit-up {
+  font-size: 14px;
+}
+
+.credit-middle {
+  height: 10em;
+  font-size: 15px;
+  width: 60em;
+}
+.credit-down {
+  display: flex;
+  font-size: 10px;
+  width: 100em;
 }
