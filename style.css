@@ -1,5 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
-
+/*header.html*/
 .container-button {
   background-image: url("images/tiled_geo_light.png");
   display: flex;
@@ -97,10 +97,14 @@
   font-size: 20px;
   font-weight: bold;
 }
-video {
-  margin: 5em 0em;
-  min-width: 100%;
+.logos-header {
+  position: relative;
+  height: 7em;
+  margin-top: -2em;
 }
+/*header.html*/
+
+/*index.html*/
 
 .title {
   display: flex;
@@ -131,67 +135,7 @@ video {
   height: 2.5em;
 }
 
-.box-title {
-  display: flex;
-  flex-flow: wrap;
-  padding: 1em;
-  gap: 6.6em;
-  margin-left: 11em;
-}
-.link-box {
-  display: flex;
-  flex-direction: row;
-  gap: 4em;
-  margin-left: 12em;
-}
-
-.credit-container {
-  margin: 3em 12em;
-  width: 43em;
-  font-size: 15px;
-}
-
-.follow {
-  margin-left: 20em;
-  width: 10em;
-}
-.bi-facebook,
-.bi-twitter,
-.bi-instagram,
-.bi-youtube,
-.bi-linkedin {
-  font-size: 15px;
-  width: 30px;
-}
-.edit {
-  font-size: 10px;
-}
-
-.footer-line {
-  display: flex;
-  border-top: 1px solid #696666;
-  width: 66em;
-}
-.title-credit {
-  font-size: 20px;
-}
-
-.credit-up {
-  font-size: 14px;
-}
-
-.credit-middle {
-  height: 10em;
-  font-size: 15px;
-  width: 60em;
-}
-.credit-down {
-  display: flex;
-  font-size: 10px;
-  width: 100em;
-}
-
-/*images */
+/*images and card */
 
 .top-section {
   background-image: url("images/tiger.jpeg");
@@ -202,11 +146,7 @@ video {
   height: 35em;
   margin-bottom: 5em;
 }
-.logos-header {
-  position: relative;
-  height: 7em;
-  margin-top: -2em;
-}
+
 .big-title {
   font-size: 4em;
   width: 100%;
@@ -237,7 +177,6 @@ video {
   margin-top: 1em;
   border: none;
 }
-
 .row {
   width: 70%;
   height: 25vw;
@@ -267,6 +206,12 @@ video {
   height: 40em;
   max-width: 100%;
   margin-bottom: 5em;
+}
+.mini-card-title {
+  margin-top: 1em;
+  font-size: 58px;
+  text-align: center;
+  width: 10em;
 }
 .medium-description {
   margin: 2.5em;
@@ -321,4 +266,156 @@ video {
   background: #ff8c00;
   padding: 5px;
   text-align: center;
+}
+/*---end index.html---*/
+
+/*FOOTER*/
+.footer {
+  background-image: url("images/tiled_geo_dark.png");
+  height: 60em;
+}
+.box-title {
+  display: flex;
+  flex-flow: wrap;
+  padding: 10em 11em 3em 2em;
+  gap: 6.4em;
+  margin-left: 11em;
+  color: #ffffff;
+}
+.link-box {
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+  margin-left: 12em;
+  color: #ffffff;
+}
+
+.credit-container {
+  margin: 3em 12em;
+  width: 43em;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.footer-line {
+  display: flex;
+  border-top: 1px solid #696666;
+  width: 73em;
+}
+.title-credit {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.credit-middle {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-content: center;
+  margin-top: -7em;
+  margin-left: 7em;
+  margin-bottom: 2em;
+  font-size: 18px;
+  width: 60em;
+}
+
+.credit-up {
+  font-size: 14px;
+}
+.logos-footer {
+  position: relative;
+  height: 8em;
+  margin-top: 2em;
+}
+
+.credit-down {
+  display: flex;
+  margin: 2em 0em;
+  width: 120em;
+}
+.credit-section {
+  width: 60em;
+  margin-right: 10px;
+  font-size: 13px;
+}
+.follow {
+  margin-left: 5em;
+  margin-top: -2px;
+}
+.bi-facebook,
+.bi-twitter,
+.bi-instagram,
+.bi-youtube,
+.bi-linkedin {
+  display: flex;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.edit {
+  font-size: 13px;
+  width: 10em;
+  margin-top: 15px;
+}
+/*video responsive */
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  margin: 7em 0em;
+}
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+/*events.html*/
+
+.events-picture {
+  background-image: url("images/lac victoria.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 35em;
+  margin-bottom: 2em;
+}
+.events-big-title {
+  font-size: 4em;
+  width: 100%;
+  height: auto;
+  color: #fefdfd;
+  margin-left: 10em;
+  padding-top: 3em;
+}
+.events-context {
+  text-align: justify;
+  width: 67em;
+  margin-left: 20em;
+  font-size: 13px;
+}
+.event-link {
+  color: #4747b0;
+}
+.event-title {
+  text-align: center;
+  margin-top: 2em;
+}
+.event-line {
+  display: flex;
+  border-top: 1px solid #8c8686;
+  margin-left: 20em;
+  width: 50em;
+}
+.card-event {
+  margin-top: 5em;
+  align-items: center;
+}
+.event-subscribe {
+  color: #4747b0;
+}
+.card-title-event {
+  font-size: 20px;
+  font-weight: bold;
 }
